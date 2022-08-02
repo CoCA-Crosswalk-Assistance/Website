@@ -1,11 +1,159 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    This is cover page
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/x-icon" href="./assets/cocalogo.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="footer.css">
+        <title>Home | CoCA</title>
+    </head>
+    <body>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'>
+                    <a href='index.html' class="title"><img src='./assets/cocalogo.png'/><span>CoCA</span>
+                    </a>
+                </li>
+                <input type='checkbox' id='check'/>
+                <span class="menu">
+                    <li>
+                        <a href="index.html" style="color: #ff6464">Home</a>
+                    </li>
+                    <li>
+                        <a href="aboutus.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="sponsors.html">Sponsors</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="https://www.gofundme.com" target="_blank">
+                            <button type="button" class="btn btn-danger donate">Donate</button>
+                        </a>
+                    </li>
+                    <label for="check" class="close-menu">
+                        <em class="fas fa-times"></em>
+                    </label>
+                </span>
+                <label for="check" class="open-menu">
+                    <em class="fas fa-bars"></em>
+                </label>
+            </ul>
+        </nav>
+        <div id="titlecontent">
+            <div id="title">
+                CoCA - Connected Crosswalk Assistance
+            </div>
+            <div id="titledesc">
+                The first walking cane for visually impaired individuals that allows them to remotely activate crosswalk signals
+            </div>
+            <a href="aboutus.html">
+                <button type="button" class="btn btn-danger" id="titlebut" style="font-size: 14px;">Meet Our Team</button>
+            </a>
+        </div>
+        <div id="cocadesc" class="container-md">
+            <div class="row">
+                <div id="desctitle" class="col-md-6 descdiv">
+                    What is CoCA?
+                </div>
+                <div id="desctext" class="col-md-6 descdiv">
+                    CoCA, or Connected Crosswalk Assistance, is a non-profit organization (NPO) that aims to provide a reliable and efficient walking cane for visually impaired individuals that allows them to remotely activate crosswalks from their walking cane. Our non-profit utilizes computer vision, electrical circuitry, and software development in order to create the walking cane.
+                    <br><br>
+                    As a member of the CoCA team, you have the opportunity to work for a non-profit that focuses on improving the day-to-day lifestyle of the blind community. Aside from this, being a part of CoCA gives you the exposure of working for an organization while building relationships with university professors and sponsors.
+                    <br>
+                    <a href="contact.html">
+                        <button type="button" class="btn btn-danger" id="descbut" style="font-size: 16px;">Contact Us</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="teams">
+            <div id="teamstitle">Our Teams</div>
+            <br>
+            <div id="teamsdesc">CoCA is divided into four distinct teams that each handle different aspects of our walking cane</div>
+            <div class="row teams">
+                <div class="col-md-3 team">
+                    <img src="./assets/softwareteam.png" alt="" class="teamimg">
+                    <div class="teamname">Software</div>
+                    <br>
+                    <div class="teamdesc">The software team will be responsible for the coding of the walking cane including the coding of the Arduino electronics. Additionally, the software team will be developing a computer vision algorithm that will allow visually-impaired users identify if they were walking on the designated path.</div>
+                    <hr class="teamline">
+                </div>
+                <div class="col-md-3 team">
+                    <img src="./assets/engineeringteam.png" alt="" class="teamimg">
+                    <div class="teamname">Engineering</div>
+                    <br>
+                    <div class="teamdesc">The engineering team will be responsible for the computer-aided design (CAD) as well as the electronic circuitry of the walking cane. The engineering team will work hand in hand with the software and research teams in order to create the best possible walking can for the visually-impaired community.</div>
+                    <hr class="teamline">
+                </div>
+                <div class="col-md-3 team">
+                    <img src="./assets/businessteam.png" alt="" class="teamimg">
+                    <div class="teamname">Business</div>
+                    <br>
+                    <div class="teamdesc">The business team plays a crucial role in securing funds and grants for our organization in order to help run our non-profit. Additionally, the business team focuses on gaining exclusive rights to our technology by applying for utility and design patents on certain aspects of our walking cane.</div>
+                    <hr class="teamline">
+                </div>
+                <div class="col-md-3 team">
+                    <img src="./assets/researchteam.png" alt="" class="teamimg">
+                    <div class="teamname">Research</div>
+                    <br>
+                    <div class="teamdesc">The research team will look into newer and more advanced technologies that would assist the other teams when designing or building the walking cane. Additionally, the research team will also be in charge of publishing papers regarding the team's progress as well as further steps that will be taken.</div>
+                    <hr class="teamline">
+                </div>
+            </div>
+            <div class="footer">
+                <div class="row footerrow">
+                    <div class="col-md-4" id="footermain">
+                        <a href="index.html" id="footername">
+                            <img src="./assets/cocalogo.png" alt="" class="footerlogo">
+                            CoCA
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="footerlinks">
+                            <a href="index.html" class="footerlink">
+                                <span>Home</span>
+                            </a>
+                            <br>
+                            <a href="aboutus.html" class="footerlink">
+                                <span>About Us</span>
+                            </a>
+                            <br>
+                            <a href="sponsors.html" class="footerlink">
+                                <span>Sponsors</span>
+                            </a>
+                            <br>
+                            <a href="contact.html" class="footerlink">
+                                <span>Contact Us</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="footerplugs">
+                            Follow Us On:
+                            <br>
+                            <a href="https://github.com/CoCA-Crosswalk-Assistance" target="_blank"><img src="./assets/github.png" alt="" class="footerplug"></a>
+                            <a href="https://www.facebook.com/cocacrosswalk" target="_blank"><img src="./assets/facebook.png" alt="" class="footerplug"></a>
+                            <a href="https://www.linkedin.com/company/coca-crosswalk-assistance/mycompany/?viewAsMember=true" target="_blank"><img src="./assets/linkedin.png" alt="" class="footerplug"></a>
+                            <br>
+                            <br>
+                            © 2022 by CoCA
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+    </body>
 </html>
