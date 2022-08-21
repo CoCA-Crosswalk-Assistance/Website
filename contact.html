@@ -93,7 +93,6 @@
                             </div>
                         </div>
                         <input type="hidden" name="_next" value="http://cocawalk.com/contact.html?submitted=true">
-                        <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_subject" value="Contact Us Submission">
                         <button type="submit" class="btn btn-danger" id="emailsubmit">Send</button>
                     </form>
@@ -147,11 +146,8 @@
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             const submit = urlParams.get('submitted');
-            console.log(submit);
-            if (submit) {
-                if (confirm(("Thanks for Submitting!"))) {
-                    window.location = "./contact.html"
-                }   
+            if (submit == "true") {
+                window.location = "https://www.cocawalk.com/contact.html";
             }
         </script>
     </body>
