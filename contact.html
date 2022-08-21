@@ -146,7 +146,7 @@
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             const submit = urlParams.get('submitted');
-            if (submit == "true") {
+            if (submit) {
                 window.location = "https://www.cocawalk.com/contact.html";
             }
         </script>
