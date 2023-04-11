@@ -60,7 +60,7 @@ object {
         margin-top: 10%;
         line-height: 1.5;
     }
-    embed {
+    object {
         position: relative;
         transform: translate(-50%, -50%);
         top: 50%;
