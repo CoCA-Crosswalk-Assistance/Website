@@ -12,10 +12,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="research.css">
         <link rel="stylesheet" href="navbar.css">
         <link rel="stylesheet" href="footer.css">
-        <title>Contact Us | CoCA</title>
+        <title>Research | CoCA</title>
     </head>
     <body>
         <nav>
@@ -33,10 +33,10 @@
                         <a href="aboutus.html">About Us</a>
                     </li>
                     <li>
-                        <a href="research.html">Research</a>
+                        <a href="research.html" style="color: #ff6464">Research</a>
                     </li>
                     <li>
-                        <a href="contact.html" style="color: #ff6464">Contact Us</a>
+                        <a href="contact.html">Contact Us</a>
                     </li>
                     <li>
                         <a href="https://nfb.org/" target="_blank">
@@ -52,53 +52,18 @@
                 </label>
             </ul>
         </nav>
-        <div id="contact" class="container-md">
-            <div class="row">
-                <div id="contactplug" class="col-md-5">
-                    <div id="contactTitle">Contact Us</div>
-                    <div id="contactemail">
-                        <img src="./assets/contactemail.png" alt="" class="contactimg">
-                        <a href="mailto:contact@cocawalk.com?subject=Contacting CoCA" target="_blank" id="email">contact@cocawalk.com</a>
-                    </div>
-                    <div id="contactmedia">
-                        <img src="./assets/contactmedia.png" alt="" class="contactimg">
-                        <a href="https://github.com/CoCA-Crosswalk-Assistance" target="_blank"><img src="./assets/github.png" alt="" class="footerplug"></a>
-                        <a href="https://www.facebook.com/cocacrosswalk" target="_blank"><img src="./assets/facebook.png" alt="" class="footerplug"></a>
-                        <a href="https://www.instagram.com/cocawalk" target="_blank"><img src="./assets/instagram.png" alt="" class="footerplug"></a>
-                        <a href="https://www.linkedin.com/company/coca-crosswalk-assistance/mycompany/?viewAsMember=true" target="_blank"><img src="./assets/linkedin.png" alt="" class="footerplug"></a>
-                    </div>
-                </div>
-                <div id="emailcontact" class="col-md-7 descdiv">
-                    <form action="https://formsubmit.co/cocawalk@gmail.com" method="POST" class="container g-2">
-                        <div class="row g-2 formrow">
-                            <div class="col-md-6">
-                                <label for="firstname" class="form-label labels">First Name*</label>
-                                <input type="text" class="form-control field" name="FirstName" id="firstname" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="lastname" class="form-label labels">Last Name*</label>
-                                <input type="text" class="form-control field" name="LastName" id="lastname" required>
-                            </div>
-                        </div>
-                        <div class="row g-2 formrow">
-                            <div class="col">
-                                <label for="email" class="form-label labels">Email Address*</label>
-                                <input type="email" class="form-control field" name="Email" id="emailaddress" required>
-                            </div>
-                        </div>
-                        <div class="row g-2 formrow">
-                            <div class="col">
-                                <label for="message" class="form-label labels">Message</label>
-                                <textarea type="text" class="form-control field" name="Message" id="message" required rows="5"></textarea>
-                            </div>
-                        </div>
-                        <input type="hidden" name="_next" value="http://cocawalk.com/contact.html?submitted=true">
-                        <input type="hidden" name="_subject" value="Contact Us Submission">
-                        <button type="submit" class="btn btn-danger" id="emailsubmit">Send</button>
-                    </form>
-                </div>
+        <div id="titlecontent">
+            <div id="title">
+                Research
+            </div>
+            <div id="titledesc">
+                CoCA has conducted extensive research proud to display our published technical report
             </div>
         </div>
+        <div class="paper">
+            <embed src="./assets/SSRN-id4258256.pdf" type="application/pdf">
+        </div>
+        </body>
         <hr>
         <div class="footer">
             <div class="row footerrow">
@@ -142,13 +107,5 @@
                 </div>
             </div>
         </div>
-        <script>
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-            const submit = urlParams.get('submitted');
-            if (submit) {
-                window.location = "https://cocawalk.com/contact.html";
-            }
-        </script>
     </body>
 </html>
