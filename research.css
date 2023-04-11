@@ -30,7 +30,7 @@
     height: 80%;
 }
 
-object {
+iframe {
     position: relative;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -60,7 +60,7 @@ object {
         margin-top: 10%;
         line-height: 1.5;
     }
-    object {
+    iframe {
         position: relative;
         transform: translate(-50%, -50%);
         top: 50%;
