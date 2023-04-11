@@ -30,7 +30,7 @@
     height: 80%;
 }
 
-embed {
+object {
     position: relative;
     transform: translate(-50%, -50%);
     top: 50%;
